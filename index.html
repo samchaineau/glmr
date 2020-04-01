@@ -388,8 +388,8 @@ summary {
 <p>The package has a function made to check the stationarity and apply a technique to stationarize the dataset. This feature would be more useful for economists or people working with time-series analysis.</p>
 </div>
 </div>
-<div id="real-exemple" class="section level2">
-<h2>Real exemple</h2>
+<div id="real-example" class="section level2">
+<h2>Real example</h2>
 <p>I created a simple shiny application that shows you the power of such package and how quick it can be. Even though the application has some limits, it is a good and concrete example.</p>
 <p>Here is the link: <a href="https://samchaineau.shinyapps.io/test/" class="uri">https://samchaineau.shinyapps.io/test/</a></p>
 </div>
@@ -402,9 +402,33 @@ summary {
 <pre class="r"><code>if(!require(&quot;tidyverse&quot;))install.packages(&quot;tidyverse&quot;) #The package is backed by some tidyverse functions
 if(!require(&quot;devtools&quot;))install.packages(&quot;devtools&quot;) #devtools is used to download the package from Github 
 library(devtools) #Load devtools
-install_github(&quot;samchaineau/glmr&quot;) #Uses the function install_github() to install &quot;glmr&quot;
-
-library(tidyverse) #Load tidyverse
+install_github(&quot;samchaineau/glmr&quot;) #Uses the function install_github() to install &quot;glmr&quot;</code></pre>
+<pre><code>##   
+   checking for file ‘/private/var/folders/7y/pg1hrky97cx42kl1t6mnwmpm0000gn/T/Rtmp1aVE66/remotesc46956fdc74c/samchaineau-glmr-42189be/DESCRIPTION’ ...
+  
+✓  checking for file ‘/private/var/folders/7y/pg1hrky97cx42kl1t6mnwmpm0000gn/T/Rtmp1aVE66/remotesc46956fdc74c/samchaineau-glmr-42189be/DESCRIPTION’
+## 
+  
+─  preparing ‘glmr’:
+## 
+  
+   checking DESCRIPTION meta-information ...
+  
+✓  checking DESCRIPTION meta-information
+## 
+  
+─  checking for LF line-endings in source and make files and shell scripts
+## 
+  
+─  checking for empty or unneeded directories
+## 
+  
+─  building ‘glmr_0.1.0.tar.gz’
+## 
+  
+   
+## </code></pre>
+<pre class="r"><code>library(tidyverse) #Load tidyverse
 library(glmr) #Load glmr
 
 head(diamonds)</code></pre>
