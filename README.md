@@ -1,10 +1,3 @@
----
-title: "glmr site"
-author: "Samuel Chaineau"
-date: "1/8/2020"
-output: html_document
----
-
 # Why this package ?
 
 Coming from a background of economics, I have been working a lot with econometrics and modelling. Although the process is very interesting, we all faced the same pain point: time. Finding the right variable to put in your models or the right features might take time as it is a try and re-do process. I call this stage "modelling exploration". Exploring models is crucial as we want to find both the most relevant and accurate one. Machines can definitely support us in this task by simulating a great number of models based on a set of variables. 
